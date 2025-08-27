@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="./SRC/CSS/style.css">
+    <link rel="stylesheet" href="./SRC/CSS/reset.css">
+    <link rel="stylesheet" href="./SRC/CSS/responsivo.css">
+    <title>ALFS Store</title>
+</head>
+<body>
+    <!-- CABEÇALHO -->
+    <header class="cabecalho">
+        <div class="logo">
+            <img src="./SRC/img/Logo ALFStore.png" alt="">
+            <h1>ALFS</h1>
+            <h1>Store</h1>
+        </div>
+        <div class="search-container">
+            <input placeholder="Buscar produtos..." class="search-input">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+    </header>
+    <!-- MENU SUPERIOR -->
+    <div class="categories-container">
+        <nav class="categories-bar">
+            <button class="category-btn active" data-category="all">
+                <i class="fa-solid fa-border-all"></i>
+                Todos
+            </button>
+            <button class="category-btn" data-category="smartphones">
+                <i class="fa-solid fa-mobile-retro"></i>
+                Smartphones
+            </button>
+            <button class="category-btn" data-category="laptops">
+                <i class="fa-solid fa-laptop"></i>
+                Notebookes
+            </button>
+            <button class="category-btn" data-category="headphones">
+                <i class="fa-solid fa-headphones"></i>
+                Fones
+            </button>
+            <button class="category-btn" data-category="accessories">
+                <i class="fa-regular fa-keyboard"></i>
+                Acessórios
+            </button>
+            <button class="category-btn" data-category="smartwatch">
+                <i class="fa-regular fa-clock"></i>
+                Smartwatches
+            </button>
+        </nav>
+        <div class="bag"> 
+        <button id="btnAbrirSacola">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <h3>0</h3>
+        </button>
+</div>
+
+    </div>
+    <!-- HERO -->
+    <section class="hero-section">
+        <h2>Black Friday Antecipado!</h2>
+        <p>Até 50% de desconto em produtos selecionados</p>
+    </section>
+
+    <!-- ITENS -->
+    <main class="products">
+        <div class="products-container"></div>
+    </main>
+
+    <!-- SACOLA -->
+    <div class="sacola-container" id="sacolaContainer">
+        <h2>Minha Sacola</h2>
+        <ul id="sacolaLista"></ul>
+        <button id="fecharSacola">Fechar</button>
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>2025 - ALFS Soluções. todos os Direitos Reservados</p>
+    </footer>
+
+</body>
+<script src="./SRC/JS/scripts.js"></script>
+</html>
